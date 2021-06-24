@@ -1,6 +1,6 @@
-# wordCounter
+# Summary
 
-wordCounter lets you enter the URL of your favorite website and shows you how many times each word occurs in it.
+This application lets you enter the URL of your favorite website and shows you how many times each word occurs in it.
 
 ## Usage
 There is a bash script that starts up the docker-compose process to instantiate the backend and frontend containers.
