@@ -10,7 +10,7 @@ const InputUrl = ({ setSelectedUrl, urlHistory
 }) => {
   const urlSchema = Yup.object().shape({
     url: Yup.string()
-      .matches(/^(http|https):\/\/./gi, 'Enter a valid URL in HTTP/S format')
+      .matches(/^(http|https):\/\/./gi, 'Enter a valid URL in HTTP/S format').nullable()
   });
 
   const formik = useFormik({
