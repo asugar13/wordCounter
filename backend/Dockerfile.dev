@@ -1,0 +1,14 @@
+FROM node
+
+WORKDIR /opt/backend
+
+# Installing dependencies
+COPY package.json .
+RUN yarn
+ENV PORT=4000
+
+# Hardcoded
+ENV NODE_PATH=.
+EXPOSE 4000
+
+CMD ["yarn","dev"]
